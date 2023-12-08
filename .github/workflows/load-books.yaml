@@ -1,6 +1,9 @@
 name: Load books
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,4 +25,4 @@ jobs:
       - name: Run main script
         id: run-main-script
         run: |
-          python load_books.py
+          python book_loader/load_books.py
