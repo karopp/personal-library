@@ -1,0 +1,70 @@
+
+
+html {
+    min-height: 100%;
+}
+
+.toolbar-title {
+    color: #274d5b;
+    font-size: 2.0rem;
+    margin-top: 4px;
+    padding: 4px;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    font-family: 'Outfit';
+  }
+
+  .book-title {
+    color: #274d5b;
+    font-size: 1.3rem;
+    margin-top: 14px;
+    font-weight: 800;
+  }
+
+.toolbar-menu-item {
+    background: transparent;
+    border: none;
+    overflow: hidden;
+  }
+.content {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+}
+
+
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Outfit',Roboto, "Helvetica Neue", sans-serif;
+}
+
+.book-item {
+//width: 500px;
+position: relative;
+min-width: 200px;
+max-width: 600px;
+box-shadow: unset !important;
+background: #835d4e2e;
+margin: 20px;}
+
+.home-card-content {
+      display: flex !important;
+    }
+ .book-image {
+ padding: 10px;
+ }
+
+ .book-information {
+ padding: 20px;
+ }
+ .toolbar{
+    background: transparent;
+    margin-top:15px;
+ }
+
+ .flexbox {
+    margin-left: auto; 
+margin-right: 0;
+display: flex;
+ }

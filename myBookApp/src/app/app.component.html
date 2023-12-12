@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-toolbar class="toolbar">
+    <div class="content flexcontainer">
+      <span class="toolbar-title">{{ appTitle }}</span>
+      <div class="flexbox">
+      <button mat-icon-button class="toolbar-menu-item" aria-label="filter" >
+        <mat-icon aria-hidden="false" aria-label="search" fontIcon="search"></mat-icon>
+      </button>
+      <button mat-icon-button class="toolbar-menu-item" aria-label="about" >
+        <mat-icon aria-hidden="false" aria-label="about" fontIcon="info"></mat-icon>
+      </button>
+      <button mat-icon-button class="toolbar-menu-item" aria-label="bookclub" >
+        <mat-icon aria-hidden="false" aria-label="bookclub" fontIcon="book"></mat-icon>
+      </button>
+    </div>
+  </div>
+  </mat-toolbar>
+    <ng-container>
+
+      <div #contentoverview class="content-overview">
+    
+            <div *ngFor="let book of bookList">
+              <mat-card class="book-item">
+                <mat-card-content class="home-card-content">
+                <img mat-card-image class="book-image"
+                  src={{book.image_url}}
+                  alt="Photo of a Shiba Inu">
+                <div class="book-information">
+                  <div class="book-author">{{ book.author }}</div>
+                  <div class="book-title">{{ book.title }}</div>
+                </div>
+              </mat-card-content>
+              </mat-card>
+            </div>
+    
+      </div>
+    </ng-container>
+    
+  </div>
+
+<router-outlet></router-outlet>
+
+
