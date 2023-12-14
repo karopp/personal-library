@@ -1,0 +1,27 @@
+name: Build and deploy
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Build Angular
+        run: |
+          cd myBookApp
+          npm install
+          npm run build -- --base-href "https://karos-personal-library.web.app/"
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --project karos-personal-library --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
