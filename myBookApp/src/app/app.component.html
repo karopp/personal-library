@@ -2,7 +2,7 @@
   <mat-toolbar class="toolbar">
     <div class="content flexcontainer">
       <span class="toolbar-title">{{ appTitle }}</span>
-      <div class="flexbox">
+      <div class="menu-buttons">
       <button mat-icon-button class="toolbar-menu-item" aria-label="filter" >
         <mat-icon aria-hidden="false" aria-label="search" fontIcon="search"></mat-icon>
       </button>
@@ -19,12 +19,12 @@
 
       <div #contentoverview class="content-overview">
     
-            <div *ngFor="let book of bookList">
+            <div class="book-list" *ngFor="let book of bookList">
               <mat-card class="book-item">
                 <mat-card-content class="home-card-content">
                 <img mat-card-image class="book-image"
                   src={{book.image_url}}
-                  alt="Photo of a Shiba Inu">
+                  alt="Book image">
                 <div class="book-information">
                   <div class="book-author">{{ book.author }}</div>
                   <div class="book-title">{{ book.title }}</div>
