@@ -49,10 +49,15 @@ html {
 
   .book-title {
     color: #274d5b;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: 14px;
-    font-weight: 800;
+    font-weight: 750;
+    line-height: 135%;
     }
+  .book-author {
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
 
 .toolbar-menu-item {
     background: transparent;
@@ -71,6 +76,8 @@ html {
     justify-content: space-between;
     padding: 20px;
     margin: 0 auto;
+    font-family: 'Outfit';
+
   }
 
 
