@@ -1,5 +1,17 @@
 [
     {
+        "image_url": "https://cover-all.buchhandlung.de/dl/e6b8242b-69ed-45d1-9545-8f759836162c/5/daz4ed/daz4ed/image.jpg",
+        "title": "Es ist ein Mädchen",
+        "author": "Camille Laurens",
+        "link": "https://www.genialokal.de/Produkt/Camille-Laurens/Es-ist-ein-Maedchen_lid_45937091.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/75290044-dc78-4df4-9e2f-7a3aceae6674/1/daz4ed/daz4ed/image.jpg",
+        "title": "Liebes Arschloch",
+        "author": "Virginie Despentes",
+        "link": "https://www.genialokal.de/Produkt/Virginie-Despentes/Liebes-Arschloch_lid_49106492.html"
+    },
+    {
         "image_url": "https://cover-all.buchhandlung.de/dl/c523d822-5e5a-487d-abaa-d703c32165d9/1/daz4ed/daz4ed/image.jpg",
         "title": "Ein simpler Eingriff",
         "author": "Yael Inokai",
@@ -22,5 +34,53 @@
         "title": "Lügen über meine Mutter",
         "author": "Daniela Dröscher",
         "link": "https://www.genialokal.de/Produkt/Daniela-Droescher/Luegen-ueber-meine-Mutter_lid_46693550.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/b963d54c-5ba1-4c51-87f2-6f58d33aad05/2/daz4ed/daz4ed/image.jpg",
+        "title": "Der schlauste Mann der Welt",
+        "author": "Andreas Eschbach",
+        "link": "https://www.genialokal.de/Produkt/Andreas-Eschbach/Der-schlauste-Mann-der-Welt_lid_49165488.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/6ab044ca-ee66-4809-befb-aa0ac74bbe5d/1/daz4ed/daz4ed/image.jpg",
+        "title": "The Other Black Girl",
+        "author": "Zakiya Dalila Harris",
+        "link": "https://www.genialokal.de/Produkt/Zakiya-Dalila-Harris/The-Other-Black-Girl_lid_46678453.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/f7c973c1-dcb7-4bf6-be84-68eb01e8eaaa/3/daz4ed/daz4ed/image.jpg",
+        "title": "Das Archiv der Träume",
+        "author": "Carmen Maria Machado",
+        "link": "https://www.genialokal.de/Produkt/Carmen-Maria-Machado/Das-Archiv-der-Traeume_lid_44581100.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/5c7eecd7-26bb-4cbb-a9b9-bc2feff62a4b/1/daz4ed/daz4ed/image.jpg",
+        "title": "So forsch, so furchtlos",
+        "author": "Andrea Abreu",
+        "link": "https://www.genialokal.de/Produkt/Andrea-Abreu/So-forsch-so-furchtlos_lid_46693618.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/9d0f80ef-3094-481c-a2f3-a2714f01a9a0/2/daz4ed/daz4ed/image.jpg",
+        "title": "Young Mungo",
+        "author": "Douglas Stuart",
+        "link": "https://www.genialokal.de/Produkt/Douglas-Stuart/Young-Mungo_lid_48934470.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/bfc76fd8-fe97-4ecb-8d2a-0a604ebfb319/2/daz4ed/daz4ed/image.jpg",
+        "title": "Steine schmeißen",
+        "author": "Sophia Fritz",
+        "link": "https://www.genialokal.de/Produkt/Sophia-Fritz/Steine-schmeissen_lid_49191587.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/886f62ff-d8fa-4850-b842-8c88a4945528/1/daz4ed/daz4ed/image.jpg",
+        "title": "Die Zukunft ist nicht binär",
+        "author": "Lydia Meyer",
+        "link": "https://www.genialokal.de/Produkt/Lydia-Meyer/Die-Zukunft-ist-nicht-binaer_lid_49110434.html"
+    },
+    {
+        "image_url": "https://cover-all.buchhandlung.de/dl/73bf9066-d165-4341-b5a4-d10279547c9d/1/daz4ed/daz4ed/image.jpg",
+        "title": "Ich wünsch' dir nur das Beste",
+        "author": "Mason Deaver",
+        "link": "https://www.genialokal.de/Produkt/Mason-Deaver/Ich-wuensch-dir-nur-das-Beste_lid_48908588.html"
     }
 ]
