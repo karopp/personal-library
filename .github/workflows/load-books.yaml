@@ -26,3 +26,9 @@ jobs:
         id: run-main-script
         run: |
           python book_loader/load_books.py
+      - name: Commit changes
+        id: commit-changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          file_pattern: personalLibrary/src/assets/books.json
+          commit_message: "data: update books"

@@ -15,7 +15,7 @@ script_path = os.path.dirname(file_path)
 
 def main():
     ratings_path = os.path.join(script_path, "content/rating.json")
-    books_path = os.path.join(script_path, "content/books.json")
+    books_path = os.path.join(script_path, "../personalLibrary/src/assets/books.json")
     with open(ratings_path, "r") as ratings_file, open(books_path, "w") as books_file:
         ratings = json.load(ratings_file)
         books = []
@@ -38,7 +38,6 @@ def main():
                 '//*[@id="pagebody"]/div[2]/div[2]/div/div/div[1]/a'
             )[0].absolute_links.pop()
             books.append(book)
-        print(books)
         books_file.seek(0)
         json.dump(books, books_file, indent=4, ensure_ascii=False)
         books_file.truncate()
