@@ -28,6 +28,9 @@
                 <div class="book-information">
                   <div class="book-author">{{ book.author }}</div>
                   <div class="book-title">{{ book.title }}</div>
+                  <div class="book-review">
+                    <span class="dot" *ngFor="let item of [].constructor(book.review);"></span>
+                  </div>
                 </div>
               </mat-card-content>
               </mat-card>

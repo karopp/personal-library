@@ -15,6 +15,8 @@ interface Book {
   title: String;
   author: String;
   link: String;
+  review: Number;
+  details: String;
 }
 
 @Component({

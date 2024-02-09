@@ -2,6 +2,7 @@
 
 import json
 import os
+import yaml
 
 from requests_html import HTMLSession
 
@@ -14,10 +15,10 @@ script_path = os.path.dirname(file_path)
 
 
 def main():
-    ratings_path = os.path.join(script_path, "content/rating.json")
+    ratings_path = os.path.join(script_path, "content/rating.yaml")
     books_path = os.path.join(script_path, "../personalLibrary/src/assets/books.json")
     with open(ratings_path, "r") as ratings_file, open(books_path, "w") as books_file:
-        ratings = json.load(ratings_file)
+        ratings = yaml.safe_load(ratings_file)
         books = []
         for rating in ratings:
             book = {}
@@ -37,6 +38,8 @@ def main():
             book["link"] = response.html.xpath(
                 '//*[@id="pagebody"]/div[2]/div[2]/div/div/div[1]/a'
             )[0].absolute_links.pop()
+            book["review"] = rating["review"]
+            book["details"] = rating["details"]
             books.append(book)
         books_file.seek(0)
         json.dump(books, books_file, indent=4, ensure_ascii=False)
