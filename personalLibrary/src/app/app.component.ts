@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { Firestore } from '@angular/fire/firestore';
+import { collection, query, getDocs} from "firebase/firestore";
 
 
-
-import booksJson from '../assets/books.json';
 
 
 interface Book {
@@ -28,5 +28,16 @@ interface Book {
 })
 export class AppComponent {
   appTitle = 'PERSONAL LIBRARY';
-  bookList: Book[] = booksJson;
+  firestore = inject(Firestore);
+  bookList: Book[] = [];
+
+  constructor() {
+    getDocs(query(collection(this.firestore, "books")
+    )).then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        this.bookList.push(doc.data() as Book)
+      })
+    });
+  }
+
 }
