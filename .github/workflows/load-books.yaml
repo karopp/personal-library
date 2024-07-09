@@ -17,7 +17,7 @@ jobs:
         id: prepare-firebase-token
         run: echo $FIREBASE_TOKEN_SDK > book_loader/karos-personal-library-firebase-adminsdk-fi04s-0384d63ca6.json
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_SDK }}
+          FIREBASE_TOKEN_SDK: ${{ secrets.FIREBASE_TOKEN_SDK }}
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
         with:
