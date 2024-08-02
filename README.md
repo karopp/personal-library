@@ -1,1 +1,2 @@
 # personal-library
+A web application, which displays the books I have read as well as a short rating. The ISBN and the rating are enriched by the `book_loader` with details about the book, e.g. title and author. This information is obtained from `geniallokal.de` and stored in the DB. The web application is an Angular application `personalLibrary`. The build creates a PWA, which can be accessed with a webbrowser or installed on mobile phones to behave like a native app.
