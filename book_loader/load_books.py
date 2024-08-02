@@ -41,8 +41,7 @@ def upload_books(script_path: str, books: List[Book]):
 
 def main():
     ratings_path = os.path.join(script_path, "content/rating.yaml")
-    books_path = os.path.join(script_path, "../personalLibrary/src/assets/books.json")
-    with open(ratings_path, "r") as ratings_file, open(books_path, "w") as books_file:
+    with open(ratings_path, "r") as ratings_file:
         ratings = yaml.safe_load(ratings_file)
         books = []
         books_object = []
@@ -79,9 +78,6 @@ def main():
                     details=rating["details"])
             )
             books.append(book)
-        books_file.seek(0)
-        json.dump(books, books_file, indent=4, ensure_ascii=False)
-        books_file.truncate()
         upload_books(script_path, books_object)
 
 
